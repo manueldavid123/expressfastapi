@@ -1,0 +1,10 @@
+version: "2"
+services:
+  express:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: express
+    restart: on-failure
+    volumes:
+      - "./:/node"

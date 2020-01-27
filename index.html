@@ -1,0 +1,15 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Node Workshop</title>
+ </head>
+ <body>
+    <h1>Mediciones de temperatura</h1>
+    <ul>
+     <% for(var i=0; i < data.length; i++) { %>
+        <li><%= data[i].temperature %>ºC</li>
+      <% } %>
+    </ul>
+ </body>
+</html>
